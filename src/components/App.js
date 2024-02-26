@@ -10,7 +10,12 @@ const [src, setsrc]=useState('')
 
 useEffect(()=>{
 const timeout= setTimeout(() => {
-  setsrc(`<html><body>${html}</body><style>${css}</style><script>${js}</script></html>`)
+  setsrc(`
+  <html>
+  <body>${html}</body>
+  <style>${css}</style>
+  <script>${js}</script>
+  </html>`)
     
 }, 250);
 console.log(src)

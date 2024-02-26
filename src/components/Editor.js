@@ -4,19 +4,12 @@ import 'codemirror/theme/material.css'
 import 'codemirror/mode/xml/xml'
 import 'codemirror/mode/javascript/javascript'
 import 'codemirror/mode/css/css'
-import { Controlled as ControlledEditor } from 'react-codemirror2'
+import { UnControlled as ControlledEditor } from 'react-codemirror2'
 function Editor(props) {
-
-   
-    const {
-        language,
-        displayname,
-        value,
-        onChange,
-    }=props;
-
-
+const {displayname,language,value,onChange}=props;
+console.log(props)
     function handleChange(value){
+      console.log(value)
         onChange(value)
     }
     
