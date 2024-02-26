@@ -17,10 +17,13 @@ function Editor(props) {
       <div className='heading bg-white text-black rounded-md p-2'>{displayname}</div>
       
         <ControlledEditor
-        className='h-48 overflow-hidden rounded-md'
+        className='h-48 overflow-hidden rounded-md code-mirror-wrapper'
         value="oh"
        options={{
-       theme:'material'
+       theme:'material',
+       lint:true,
+        mode: language,
+        lineNumbers: true,
        }}
         />
       
